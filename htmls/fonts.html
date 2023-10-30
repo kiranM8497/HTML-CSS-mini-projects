@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 1.6em;
+           
+        }
+
+        h2::selection {
+            color: #fff;
+            background-color: #7d2ae8;
+        }
+         p::selection {
+            color:#fff;
+            background-color: #ff676d;
+         }
+
+         #welcome p span {
+            font-weight: bold;
+         }
+         #about p span {
+            font-style: italic;
+         }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-header">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet, <span>
+            consectetur adipisicing elit.
+            In provident optio</span> praesentium natus dicta sint unde nihil labore! Hic, quasi?
+        </p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet <span>consectetur, adipisicing elit.
+            Quae corrupti beatae rem. </span>Sed corrupti veritatis esse nam rerum, rem obcaecati.</p>
+    </div>
+</body>
+</html>

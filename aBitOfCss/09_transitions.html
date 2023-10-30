@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transitions</title>
+  <style>
+    body {
+      background: gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .box {
+      background: white;
+      width: 200px;
+      height: 200px;
+       text-align: center;
+      color: white;
+      /* transition-property: background;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out; */
+      /* transition-delay: 3s; */
+
+      transition: background, border-radius 3s ease-in-out ;
+     
+    }
+    .box:hover {
+      background: red;
+      color: violet;
+      border-radius: 50%;
+    
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>POTATO</h2>
+  </div>
+  
+</body>
+</html>

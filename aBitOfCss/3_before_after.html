@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>before and after</title>
+  <style>
+body{
+  font-family: Arial, Helvetica, sans-serif ;
+  background: #333;
+  margin: 0 ;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  
+}
+
+header:before {
+  content: '';
+  background: url("https://images.unsplash.com/photo-1681649514551-712e2093d277?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80") no-repeat center center/cover ;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+ 
+}
+
+header > h1 {
+  font-size: 4rem;
+  margin: 1rem;
+}
+
+
+
+    /* practical use this is in the forms where we need to matk some inputs as 
+    required . wecan just add this class and our work here is done */
+    .is-required:after {
+      content: '*';
+      color: red;
+      padding-left: 2px;
+    }
+
+
+
+    
+  </style>
+</head>
+<body>
+  <!-- <label class="is-required" for="name" >Name</label>
+  <input type="text" name="" id=""> -->
+<header>
+  <h1>hello World</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, odit?</p>
+
+</header>
+
+<section>
+  <h3>Lorem, ipsum dolor.</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque animi pariatur eaque aliquam libero nobis quia, corporis vero maxime, laborum alias, autem iste facilis illum.</p>
+</section>
+</body>
+</html>
